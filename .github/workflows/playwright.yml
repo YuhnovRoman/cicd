@@ -60,3 +60,4 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: gh-pages
         publish_dir: allure-history
+        run: java "-DconfigFile=notifications/config.json" "-Dnotifications.telegram.token=${ secrets.TELEGRAM_TOKEN }" -jar notifications/allure-notifications-4.9.0.jar
