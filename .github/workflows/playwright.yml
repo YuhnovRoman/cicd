@@ -69,7 +69,7 @@ jobs:
     
     # Отправка уведомлений
     - name: notification
-      run: $ java "-DconfigFile=notifications/config.json" -jar notifications/allure-notifications-4.9.0.jar
+      run: java "-DconfigFile=notifications/config.json" -jar notifications/allure-notifications-4.9.0.jar
     
      
 
