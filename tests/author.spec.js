@@ -14,7 +14,7 @@ test("Проверка отображения элементов на стран
 
     await app.authorPage.favoriteArticleClick();
 
-    await test.step("Отсутствуют избранных статей", async () => {
+    await test.step("Отсутствуют избранные статей", async () => {
         // Специальный fail
         await expect(app.authorPage.authorEmptyState).toContainText("Keaton doesn\'t have favorite.");
     });
