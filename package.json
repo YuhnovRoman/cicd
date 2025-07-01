@@ -26,7 +26,7 @@
     "@types/node": "^24.0.8"
   },
   "dependencies": {
-    "allure": "^3.0.0-beta.15",
+    "allure": "^3.0.0-beta.10",
     "allure-playwright": "^3.3.0"
   }
 }
