@@ -22,10 +22,6 @@ jobs:
     - uses: actions/setup-node@v4
       with:
         node-version: lts/*
-    - uses: actions/setup-java@v4.7.1
-      with:
-        distribution: "temurin"
-        java-version: "21"
     - name: install npm
       run: npm ci
     - name: install Playwright Browsers
@@ -70,6 +66,10 @@ jobs:
         publish_branch: gh-pages
         publish_dir: allure-history
         run: $ java "-DconfigFile=notifications/config.json" -jar notifications/allure-notifications-4.9.0.jar
+    
+    # Отправка уведомлений
+    - name: notification
+      run: $ java "-DconfigFile=notifications/config.json" -jar notifications/allure-notifications-4.9.0.jar
     
      
 
