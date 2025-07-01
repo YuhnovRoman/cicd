@@ -15,6 +15,7 @@ test("Проверка отображения элементов на стран
     await app.authorPage.favoriteArticleClick();
 
     await test.step("Статься добавлена в избранное", async () => {
+        // Специальный fail
         await expect(app.authorPage.authorEmptyState).toContainText("Keaton doesn\'t have favorite.");
     });
 });
