@@ -20,6 +20,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - uses: actions/setup-node@v4
+    - uses: actions/setup-java@v4.7.1
       with:
         node-version: lts/*
     - name: install npm
@@ -65,7 +66,7 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: gh-pages
         publish_dir: allure-history
+        run: $ java "-DconfigFile=notifications/config.json" -jar notifications/allure-notifications-4.9.0.jar
+    
+     
 
-    # Отправка уведомления
-    - name: notification
-      run: java "-DconfigFile=notifications/config.json" "-Dnotifications.telegram.token=${{ secrets.TELEGRAM_TOKEN }}" -jar notifications/allure-notifications-4.9.0.jar
