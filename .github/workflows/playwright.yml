@@ -24,7 +24,8 @@ jobs:
         node-version: lts/*
     - uses: actions/setup-java@v4.7.1
       with:
-        distribution: 'temurin'
+        distribution: "temurin"
+        java-version: "21"
     - name: install npm
       run: npm ci
     - name: install Playwright Browsers
