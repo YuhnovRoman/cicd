@@ -16,8 +16,9 @@ jobs:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     
-    # Чекаут кода
+    
     steps:
+    # Чекаут кода
     - uses: actions/checkout@v4
     - uses: actions/setup-node@v4
       with:
@@ -65,11 +66,8 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: gh-pages
         publish_dir: allure-history
-        run: $ java "-DconfigFile=notifications/config.json" -jar notifications/allure-notifications-4.9.0.jar
-    
-    # Отправка уведомлений
+
     - name: notification
+      shell: bash
       run: java "-DconfigFile=notifications/config.json" -jar notifications/allure-notifications-4.9.0.jar
     
-     
-
