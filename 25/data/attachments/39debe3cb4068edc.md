@@ -1,0 +1,63 @@
+# Page snapshot
+
+```yaml
+- banner:
+  - navigation:
+    - link "conduit":
+      - /url: "#/"
+    - list:
+      - listitem:
+        - link " Source code":
+          - /url: https://github.com/TonyMckes/conduit-realworld-example-app
+    - list:
+      - listitem:
+        - link " Home":
+          - /url: "#/"
+      - listitem:
+        - link " New Article":
+          - /url: "#/editor"
+      - listitem:
+        - img "Tremaine_Borer"
+        - text: Tremaine_Borer
+- main:
+  - heading "Licensed Silk Keyboard" [level=1]
+  - link "Tremaine_Borer":
+    - /url: "#/profile/Tremaine_Borer"
+    - img "Tremaine_Borer"
+  - link "Tremaine_Borer":
+    - /url: "#/profile/Tremaine_Borer"
+  - text: July 2, 2025
+  - button " Delete Article"
+  - button " Edit Article":
+    - link " Edit Article":
+      - /url: "#/editor/licensed-silk-keyboard"
+  - paragraph: Thymum versus suffragium concido cuius. Tepidus ubi bibo audentia uxor approbo. Pecco talus facere theca dedico acerbitas sum.
+  - list:
+    - listitem: Comic
+  - separator
+  - link "Tremaine_Borer":
+    - /url: "#/profile/Tremaine_Borer"
+    - img "Tremaine_Borer"
+  - link "Tremaine_Borer":
+    - /url: "#/profile/Tremaine_Borer"
+  - text: July 2, 2025
+  - button " Delete Article"
+  - button " Edit Article":
+    - link " Edit Article":
+      - /url: "#/editor/licensed-silk-keyboard"
+  - textbox "Write a comment..."
+  - img "Tremaine_Borer"
+  - button "Post Comment"
+  - text: There are no comments yet...
+- contentinfo:
+  - link "conduit":
+    - /url: "#/"
+  - text: An interactive learning project from
+  - link "Thinkster":
+    - /url: https://thinkster.io
+  - text: . Code & design licensed under MIT.
+  - list:
+    - listitem:
+      - link " Source code":
+        - /url: https://github.com/TonyMckes/conduit-realworld-example-app
+```
