@@ -70,7 +70,7 @@ jobs:
         publish_branch: gh-pages
         publish_dir: allure-history
 
-    - name: notification
+    - name: send notification
       if: always()
       continue-on-error: true
       run: java "-DconfigFile=notifications/tmp/config.json" -jar notifications/allure-notifications-4.9.0.jar
