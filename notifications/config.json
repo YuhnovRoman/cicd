@@ -1,0 +1,21 @@
+{
+  "base": {
+    "logo": "",
+    "project": "cicd",
+    "environment": "",
+    "comment": "",
+    "reportLink": "https://yuhnovroman.github.io/cicd",
+    "language": "ru",
+    "allureFolder": "allure-report",
+    "enableChart": true,
+    "enableSuitesPublishing": false,
+    "customData": {}
+  },
+  "telegram": {
+    "token": "",
+    "chat": "",
+    "topic": "",
+    "replyTo": "",
+    "templatePath": "/templates/telegram.ftl"
+  }
+}
