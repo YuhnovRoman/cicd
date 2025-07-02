@@ -71,5 +71,7 @@ jobs:
         publish_dir: allure-history
 
     - name: notification
-      run: java "-DconfigFile=notifications/config.json" -jar notifications/allure-notifications-4.9.0.jar
+      if: always()
+      continue-on-error: true
+      run: java "-DconfigFile=notifications/tmp/config.json" -jar notifications/allure-notifications-4.9.0.jar
     
