@@ -23,6 +23,10 @@ jobs:
     - uses: actions/setup-node@v4
       with:
         node-version: lts/*
+    - uses: actions/setup-java@v4
+      with:
+        distribution: 'temurin'
+        java-version: '21'
     - name: install npm
       run: npm ci
     - name: install Playwright Browsers
@@ -58,7 +62,6 @@ jobs:
         allure_history: allure-history
         keep_reports: 20
 
-    # Деплоим отчёт
     - name: deploy report
       if: always()
       uses: peaceiris/actions-gh-pages@v4
@@ -68,6 +71,5 @@ jobs:
         publish_dir: allure-history
 
     - name: notification
-      shell: bash
       run: java "-DconfigFile=notifications/config.json" -jar notifications/allure-notifications-4.9.0.jar
     
