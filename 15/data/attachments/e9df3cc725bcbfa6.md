@@ -1,0 +1,63 @@
+# Page snapshot
+
+```yaml
+- banner:
+  - navigation:
+    - link "conduit":
+      - /url: "#/"
+    - list:
+      - listitem:
+        - link " Source code":
+          - /url: https://github.com/TonyMckes/conduit-realworld-example-app
+    - list:
+      - listitem:
+        - link " Home":
+          - /url: "#/"
+      - listitem:
+        - link " New Article":
+          - /url: "#/editor"
+      - listitem:
+        - img "Damaris_McKenzie"
+        - text: Damaris_McKenzie
+- main:
+  - heading "Elegant Aluminum Shirt" [level=1]
+  - link "Damaris_McKenzie":
+    - /url: "#/profile/Damaris_McKenzie"
+    - img "Damaris_McKenzie"
+  - link "Damaris_McKenzie":
+    - /url: "#/profile/Damaris_McKenzie"
+  - text: July 2, 2025
+  - button " Delete Article"
+  - button " Edit Article":
+    - link " Edit Article":
+      - /url: "#/editor/elegant-aluminum-shirt"
+  - paragraph: Curiositas thalassinus tondeo utique perferendis adinventitias vomica. Arma iste peccatus quaerat esse usitas labore defessus adeo. Deduco compono usus vulticulus capitulus blandior thalassinus campana advoco.
+  - list:
+    - listitem: Memoir
+  - separator
+  - link "Damaris_McKenzie":
+    - /url: "#/profile/Damaris_McKenzie"
+    - img "Damaris_McKenzie"
+  - link "Damaris_McKenzie":
+    - /url: "#/profile/Damaris_McKenzie"
+  - text: July 2, 2025
+  - button " Delete Article"
+  - button " Edit Article":
+    - link " Edit Article":
+      - /url: "#/editor/elegant-aluminum-shirt"
+  - textbox "Write a comment..."
+  - img "Damaris_McKenzie"
+  - button "Post Comment"
+  - text: There are no comments yet...
+- contentinfo:
+  - link "conduit":
+    - /url: "#/"
+  - text: An interactive learning project from
+  - link "Thinkster":
+    - /url: https://thinkster.io
+  - text: . Code & design licensed under MIT.
+  - list:
+    - listitem:
+      - link " Source code":
+        - /url: https://github.com/TonyMckes/conduit-realworld-example-app
+```
