@@ -1,0 +1,6 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","5812","Регистрация пользователя","chromium","Wed Jul 02 09:11:11 GMT 2025","failed","Wed Jul 02 09:11:17 GMT 2025","","registration.spec.js","",""
+"","5332","Фильтрация статей по тегу","chromium","Wed Jul 02 09:11:05 GMT 2025","failed","Wed Jul 02 09:11:11 GMT 2025","","main.spec.js","",""
+"","5410","Проверка отображения элементов на главной странице","chromium","Wed Jul 02 09:11:05 GMT 2025","failed","Wed Jul 02 09:11:10 GMT 2025","","main.spec.js","",""
+"","5752","Проверка отображения элементов на странице автора","chromium","Wed Jul 02 09:10:58 GMT 2025","failed","Wed Jul 02 09:11:04 GMT 2025","","author.spec.js","",""
+"","6204","Проверка создания статьи","chromium","Wed Jul 02 09:10:58 GMT 2025","failed","Wed Jul 02 09:11:04 GMT 2025","","createArticle.spec.js","",""
