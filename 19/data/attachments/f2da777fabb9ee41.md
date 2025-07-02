@@ -1,0 +1,63 @@
+# Page snapshot
+
+```yaml
+- banner:
+  - navigation:
+    - link "conduit":
+      - /url: "#/"
+    - list:
+      - listitem:
+        - link " Source code":
+          - /url: https://github.com/TonyMckes/conduit-realworld-example-app
+    - list:
+      - listitem:
+        - link " Home":
+          - /url: "#/"
+      - listitem:
+        - link " New Article":
+          - /url: "#/editor"
+      - listitem:
+        - img "Loyal18"
+        - text: Loyal18
+- main:
+  - heading "Rustic Bamboo Shirt" [level=1]
+  - link "Loyal18":
+    - /url: "#/profile/Loyal18"
+    - img "Loyal18"
+  - link "Loyal18":
+    - /url: "#/profile/Loyal18"
+  - text: July 2, 2025
+  - button " Delete Article"
+  - button " Edit Article":
+    - link " Edit Article":
+      - /url: "#/editor/rustic-bamboo-shirt"
+  - paragraph: Ut theatrum testimonium. Illo causa vilicus sufficio bonus via urbs sortitus. Commodi celo comprehendo ait demonstro.
+  - list:
+    - listitem: Psychology
+  - separator
+  - link "Loyal18":
+    - /url: "#/profile/Loyal18"
+    - img "Loyal18"
+  - link "Loyal18":
+    - /url: "#/profile/Loyal18"
+  - text: July 2, 2025
+  - button " Delete Article"
+  - button " Edit Article":
+    - link " Edit Article":
+      - /url: "#/editor/rustic-bamboo-shirt"
+  - textbox "Write a comment..."
+  - img "Loyal18"
+  - button "Post Comment"
+  - text: There are no comments yet...
+- contentinfo:
+  - link "conduit":
+    - /url: "#/"
+  - text: An interactive learning project from
+  - link "Thinkster":
+    - /url: https://thinkster.io
+  - text: . Code & design licensed under MIT.
+  - list:
+    - listitem:
+      - link " Source code":
+        - /url: https://github.com/TonyMckes/conduit-realworld-example-app
+```
