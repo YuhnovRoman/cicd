@@ -66,6 +66,11 @@ jobs:
         publish_branch: gh-pages
         publish_dir: allure-history
 
+    - name: Show secrets
+      if: always()
+      continue-on-error: true
+      run: echo "${{ secrets.TELEGRAM_TOKEN }}, ${{ secrets.ID_CHAT }}"
+
     - name: Send notification
       if: always()
       continue-on-error: true
