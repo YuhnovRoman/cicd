@@ -69,7 +69,10 @@ jobs:
     - name: Show secrets
       if: always()
       continue-on-error: true
-      run: echo "ГитХаб токен=${{ secrets.GITHUB_TOKEN }}, Телега токен=${{ secrets.TELEGRAM_TOKEN }}, айди чата=${{ secrets.ID_CHAT }}"
+      env:
+          TG_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TG_ID: ${{ secrets.ID_CHAT }}
+      run: echo "ГитХаб токен=${{ secrets.GITHUB_TOKEN }}, Телега токен=$TG_TOKEN, айди чата=$TG_ID"
 
     - name: Send notification
       if: always()
