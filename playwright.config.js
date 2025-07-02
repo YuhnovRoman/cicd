@@ -27,6 +27,8 @@ export default defineConfig({
     ['html', { open: "never" }],
     ["line"],
     ["allure-playwright", {
+      detail: false,
+      suiteTitle: false,
       resultsDir: "allure-results",
     }],
   ],
