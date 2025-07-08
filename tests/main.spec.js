@@ -6,8 +6,7 @@ test("Проверка отображения элементов на главн
 
   await test.step("Отображен контент на главной", async () => {
     await expect(app.mainPage.mainBanner).toBeVisible();
-    // Специальный fail
-    await expect(app.mainPage.mainPopularTags).toHaveCount(30);
+    await expect(app.mainPage.mainPopularTags).toHaveCount(50);
   });
 });
 
@@ -15,8 +14,7 @@ test("Фильтрация статей по тегу", async ({ app }) => {
   await app.mainPage.openMainPage();
 
   await test.step("Отображен контент списков статей", async () => {
-    // Специальный fail
-    await expect(app.mainPage.mainDefaultFilterTab).toContainText("Global Feeds");
+    await expect(app.mainPage.mainDefaultFilterTab).toContainText("Global Feed");
     await expect(app.mainPage.mainPopularTags.first()).toBeVisible();
   });
 

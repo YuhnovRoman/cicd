@@ -26,7 +26,6 @@ test("Проверка создания статьи", async ({ app }) => {
         await expect(app.articlePage.articleContent).not.toBeEmpty();
         await expect(app.articlePage.articleActionsImg).toBeVisible();
         await expect(app.articlePage.articleActionsInfo).toBeVisible();
-        // Специальный fail
-        await expect(app.articlePage.articleCommentBlock).toContainText("There are no comment yet...");
+        await expect(app.articlePage.articleCommentBlock).toContainText("There are no comments yet...");
     });
 });

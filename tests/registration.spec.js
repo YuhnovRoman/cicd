@@ -18,7 +18,6 @@ test("Регистрация пользователя", async ({ app }) => {
     });
 
     await test.step("Отображена аватарка пользователя", async () => {
-        // Специальный fail
-        await expect(app.authPage.userImg).toBeHidden();
+        await expect(app.authPage.userImg).toBeVisible();
     });
 });

@@ -16,7 +16,6 @@ jobs:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     
-    
     steps:
     # Чекаут кода
     - uses: actions/checkout@v4
@@ -69,5 +68,5 @@ jobs:
     - name: Send notification
       if: always()
       continue-on-error: true
-      run: java "-DconfigFile=notifications/config.json" "-Dnotifications.telegram.token=${{ secrets.TELEGRAM_TOKEN }}" "-Dnotifications.telegram.chat=${{ secrets.ID_CHAT }}" -jar notifications/allure-notifications-4.9.0.jar
+      run: java "-DconfigFile=notifications/config.json" -jar notifications/allure-notifications-4.9.0.jar
     
