@@ -36,7 +36,7 @@ jobs:
       with: 
         name: allure-results
         path: allure-results
-        retention-days: 2
+        retention-days: 5
 
     # Забираем результаты предыдущего запуска  
     - uses: actions/checkout@v4
